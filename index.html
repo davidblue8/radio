@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<metadata charset="UTF-8">
+    <title>Family radio</title>
+<script>
+var audio = new audio;
+var media = media['electric.mp3','Neo Tem Nada.mp3'];
+
+    var radio = function(){
+        for(var i = 0;i < media.length;i++){
+            audio.src= media[i];
+        }
+    }
+    
+</script>
+<style>
+    
+</style>
+<body>
+    <hi>Welcome to Radio.me</hi>
+    <br>
+    <audio onplay="radio()" loop controls>
+         <source src='electric.mp3'/>
+    </audio>
+    
+    
+    
+    
+</body>
+</html>
