@@ -3,14 +3,15 @@
 <metadata charset="UTF-8">
     <title>Family radio</title>
 <script>
-var audio = new audio;
-var media = media['electric.mp3','Neo Tem Nada.mp3'];
+var audio = new audio['electric.mp3','Neo Tem Nada.mp3'];
+var media = media;
 
     var radio = function(){
-        for(var i = 0;i < media.length;i++){
-            audio.src= media[i];
+        for(var i = 0;i < audio.length;i++){
+            audio.src= audio[i];
         }
     }
+ document.getElementById('music').addEventListener('ended',radio());
     
 </script>
 <style>
@@ -19,9 +20,7 @@ var media = media['electric.mp3','Neo Tem Nada.mp3'];
 <body>
     <hi>Welcome to Radio.me</hi>
     <br>
-    <audio onplay="radio()" loop controls>
-         <source src='electric.mp3'/>
-    </audio>
+    <button id="music" onplay="radio()">play</button>
     
     
     
