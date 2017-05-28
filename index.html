@@ -3,25 +3,26 @@
 <metadata charset="UTF-8">
     <title>Family radio</title>
 <script>
-var audio = new audio['electric.mp3','Neo Tem Nada.mp3'];
-var media = media;
-
-    var radio = function(){
-        for(var i = 0;i < audio.length;i++){
-            audio.src= audio[i];
-        }
-    }
- document.getElementById('music').addEventListener('ended',radio());
-    
+var audio = new Audio;
+var playlist =new Array('electric.mp3','Neo Tem Nada.mp3');
+ 
+ audio.addEventListener('ended', Radio(){
+     for(var i = 0; i < playlist.length; i++)
+     audio.src = playlist[i];
+     audio.play();
+ });
+     
+ 
+     
 </script>
 <style>
-    
+ 
 </style>
 <body>
     <hi>Welcome to Radio.me</hi>
     <br>
-    <button id="music" onplay="radio()">play</button>
-    
+    <button id="music" onplay="Radio()">play</button>
+
     
     
     
