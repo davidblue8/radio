@@ -5,13 +5,15 @@
 <script>
 var audio = new Audio;
 var playlist =new Array('electric.mp3','Neo Tem Nada.mp3');
- 
- audio.addEventListener('ended', Radio(){
-     for(var i = 0; i < playlist.length; i++)
+ function Radio(){
+  for(var i = 0; i < playlist.length; i++)
      audio.src = playlist[i];
      audio.play();
- });
-     
+
+ }
+ 
+ audio.addEventListener('ended', Radio());
+ audio.loop = true;
  
      
 </script>
@@ -21,8 +23,8 @@ var playlist =new Array('electric.mp3','Neo Tem Nada.mp3');
 <body>
     <hi>Welcome to Radio.me</hi>
     <br>
-    <button id="music" onplay="Radio()">play</button>
-
+    <button id="play" onplay="Radio()">play</button>
+    
     
     
     
